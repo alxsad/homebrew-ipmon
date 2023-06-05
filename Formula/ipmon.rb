@@ -5,22 +5,22 @@
 class Ipmon < Formula
   desc "zero dependency ip address monitoring"
   homepage "https://github.com/alxsad/ipmon"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/alxsad/ipmon/releases/download/v1.0.2/ipmon_Darwin_arm64.tar.gz"
-      sha256 "8f3884e0fab083592e942a152df2c14dd0a109a7d1ff972dcf55626c3e004e28"
+      url "https://github.com/alxsad/ipmon/releases/download/v1.0.3/ipmon_Darwin_arm64.tar.gz"
+      sha256 "c5b670458c69031113eb44c3c9bbae3d2cf2926b494b7c834c4a3a6904dd46d5"
 
       def install
         bin.install "ipmon"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/alxsad/ipmon/releases/download/v1.0.2/ipmon_Darwin_x86_64.tar.gz"
-      sha256 "47e5386f9a2e906e5978a0410b4d261960d9748e99fe7c0767a36a09d5ec1157"
+      url "https://github.com/alxsad/ipmon/releases/download/v1.0.3/ipmon_Darwin_x86_64.tar.gz"
+      sha256 "70c2f01a2ffbd9894fd7511422026b952b2ae0d6b53155a9bf1f8f74ed51f390"
 
       def install
         bin.install "ipmon"
